@@ -83,7 +83,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col justify-between p-8 bg-[#f9f9f9] text-[#111] font-sans relative overflow-hidden">
 
       {/* Top Left Links */}
-      <div className="fixed top-12 left-8 md:left-12 flex flex-col gap-2 text-[10px] font-bold tracking-widest uppercase z-20 text-gray-500">
+      <div className="fixed top-12 left-8 md:left-12 flex flex-col gap-2 text-sm font-bold tracking-widest uppercase z-20 text-gray-500">
         <a href="#" onClick={(e) => { e.preventDefault(); alert(lang === 'zh' ? '准备个人简介中...' : 'Personal bio coming soon...'); }} className="hover:text-black transition-colors">{t.about}</a>
         <a href="mailto:yaron999999@gmail.com" className="hover:text-black transition-colors">{t.contact}</a>
       </div>
@@ -92,13 +92,13 @@ export default function Home() {
       <div className="fixed top-12 right-8 md:right-12 z-20 flex gap-4">
         <button
           onClick={() => setLang('zh')}
-          className={`text-[10px] font-bold tracking-widest uppercase transition-colors ${lang === 'zh' ? 'text-black opacity-100' : 'text-gray-400 opacity-60 hover:text-black hover:opacity-100'}`}
+          className={`text-sm font-bold tracking-widest uppercase transition-colors ${lang === 'zh' ? 'text-black opacity-100' : 'text-gray-400 opacity-60 hover:text-black hover:opacity-100'}`}
         >
           中文
         </button>
         <button
           onClick={() => setLang('en')}
-          className={`text-[10px] font-bold tracking-widest uppercase transition-colors ${lang === 'en' ? 'text-black opacity-100' : 'text-gray-400 opacity-60 hover:text-black hover:opacity-100'}`}
+          className={`text-sm font-bold tracking-widest uppercase transition-colors ${lang === 'en' ? 'text-black opacity-100' : 'text-gray-400 opacity-60 hover:text-black hover:opacity-100'}`}
         >
           English
         </button>
@@ -115,7 +115,7 @@ export default function Home() {
         {/* Dynamic Subtitle - Refined Typography */}
         <div className="h-12 flex items-center justify-center mb-[8vh] px-4">
           <p
-            className={`text-base md:text-lg font-medium text-gray-600 tracking-wide text-center transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+            className={`text-lg md:text-xl font-medium text-gray-600 tracking-wide text-center transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
           >
             {t.rotatingText[textIndex]}
           </p>
@@ -134,7 +134,7 @@ export default function Home() {
               <svg className="w-4 h-4 mb-0.5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.45-1.15 4.36-1.15 1.5.15 2.76.71 3.51 1.76-2.99 1.77-2.61 5.91.56 7.28-.48 1.4-1.16 2.82-3.51 4.34zM13.03 5.37c.75-1.07.69-2.31.54-3.37-1.17.07-2.58.74-3.26 1.76-.63 1.01-.52 2.37.56 2.37.15 0 1.25.13 2.16-.76z" />
               </svg>
-              <span className="font-medium tracking-wider text-sm">{t.macos}</span>
+              <span className="font-medium tracking-wider text-lg">{t.macos}</span>
             </div>
             <span className="absolute -bottom-8 text-[9px] text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-widest">
               {t.download}
@@ -151,7 +151,7 @@ export default function Home() {
               <svg className="w-4 h-4 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
               </svg>
-              <span className="font-medium tracking-wider text-sm">{t.invite}</span>
+              <span className="font-medium tracking-wider text-lg">{t.invite}</span>
             </div>
             <span className="absolute -bottom-8 text-[9px] text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-widest">
               {t.getInvite}
@@ -163,7 +163,7 @@ export default function Home() {
       </div>
 
       {/* Footer / Signature */}
-      <div className="fixed bottom-8 left-8 md:left-12 text-[10px] font-bold text-gray-400 z-20 tracking-wider">
+      <div className="fixed bottom-8 left-8 md:left-12 text-sm font-bold text-gray-400 z-20 tracking-wider">
         <p className="mb-1 uppercase">
           Based on <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">OpenCode</a>
         </p>
@@ -188,34 +188,34 @@ export default function Home() {
               </svg>
             </button>
 
-            <h3 className="text-lg font-bold mb-1 text-center">{t.modalTitle}</h3>
-            <p className="text-center text-sm text-red-500 mb-4">🧧 新年快乐！MetaMe 给大家拜年啦，祝各位马年大吉、万事如意！</p>
+            <h3 className="text-xl font-bold mb-1 text-center">{t.modalTitle}</h3>
+            <p className="text-center text-base text-red-500 mb-4">🧧 新年快乐！MetaMe 给大家拜年啦，祝各位马年大吉、万事如意！</p>
 
             <div className="flex flex-col items-center gap-4">
               <div className="flex gap-4">
                 <div className="flex flex-col items-center gap-1">
                   <img src="/QR.jpg" alt="Feishu QR Code" className="w-40 h-40 object-contain" />
-                  <span className="text-[11px] text-gray-400 font-medium">飞书扫码添加</span>
+                  <span className="text-sm text-gray-400 font-medium">飞书扫码添加</span>
                 </div>
                 <div className="flex flex-col items-center gap-1">
                   <img src="/wechat-qr.png" alt="WeChat QR Code" className="w-40 h-40 object-contain" />
-                  <span className="text-[11px] text-gray-400 font-medium">微信内测群</span>
-                  <span className="text-[10px] text-gray-500">欢迎加入内测群反馈意见</span>
+                  <span className="text-sm text-gray-400 font-medium">微信内测群</span>
+                  <span className="text-xs text-gray-500">欢迎加入内测群反馈意见</span>
                 </div>
                 <div className="flex flex-col items-center gap-1">
                   <img src="/tip-qr.jpg" alt="Tip QR Code" className="w-40 h-40 object-contain" />
-                  <span className="text-[11px] text-gray-400 font-medium">赞赏码</span>
-                  <span className="text-[10px] text-gray-500">给MetaMe捐个买房(服务器)钱</span>
+                  <span className="text-sm text-gray-400 font-medium">赞赏码</span>
+                  <span className="text-xs text-gray-500">给MetaMe捐个买房(服务器)钱</span>
                 </div>
               </div>
 
-              <div className="text-[13px] text-gray-600 space-y-1.5 text-left w-full bg-gray-50 p-3 rounded-md leading-snug">
+              <div className="text-sm text-gray-600 space-y-2 text-left w-full bg-gray-50 p-4 rounded-md leading-normal">
                 {t.steps.map((step, index) => (
                   <p key={index}>{step}</p>
                 ))}
               </div>
 
-              <div className="text-sm text-red-500 text-left w-full bg-red-50 p-3 rounded-md leading-relaxed">
+              <div className="text-base text-red-500 text-left w-full bg-red-50 p-4 rounded-md leading-relaxed">
                 <p className="font-bold mb-1">🔒 安全提醒</p>
                 <p>MetaMe 可以通过手机远程操控您的电脑、访问电脑上的文件。请务必保护好您的飞书账号安全，不要将账号借给他人使用，避免造成隐私泄露。</p>
               </div>

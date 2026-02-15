@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+bun.lockb
+
+# Development
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+*.sql.bak
+
+# Build
+dist/
+build/
+.next/
+out/
+.vercel/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+metame-commerce.db
+
+# Stripe
+.stripe/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Runtime data
+pids/
+*.seed
+*.pid.lock
