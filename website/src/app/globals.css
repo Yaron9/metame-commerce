@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f9f9f9;
+  --foreground: #111111;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .tracking-widest-xl {
+    letter-spacing: 0.25em;
+  }
+}
