@@ -28,10 +28,10 @@ export default function Home() {
       modalTitle: "获取邀请码 & 安装指南",
       modalGreeting: "🧧 新年快乐！MetaMe 给大家拜年啦，祝各位马年大吉、万事如意！",
       steps: [
-        "1. 点击上方按钮下载安装包（.dmg 文件）",
-        "2. 双击打开 .dmg，将 MetaMe 拖入「应用程序」文件夹",
-        "3. 打开 MetaMe，系统会提示「无法验证开发者」→ 点击「取消」",
-        "4. 打开「系统设置」→「隐私与安全性」→ 页面下拉找到「MetaMe 已被阻止」→ 点击「仍要打开」",
+        "1. 下载 MetaMe-Install.zip",
+        "2. 双击解压",
+        "3. 双击「双击本文件安装.command」",
+        "4. 如系统提示「无法验证开发者」→ 打开「系统设置」→「隐私与安全性」→ 页面下拉找到「MetaMe 已被阻止」→ 点击「仍要打开」",
         "⚠️ 这不是病毒！目前处于内测阶段，尚未购买 Apple 开发者证书，正式版会解决。如仍无法打开，请打开「终端」输入：xattr -cr /Applications/MetaMe.app",
         "5. 扫码添加飞书机器人 → 自动收到邀请码（仅首次）→ 在电脑上输入邀请码",
         "6. 给机器人发送「绑定」→ 收到绑定码 → 在电脑上输入绑定码 → 绑定成功"
@@ -56,10 +56,10 @@ export default function Home() {
       modalTitle: "Get Invite Code & Install Guide",
       modalGreeting: "🧧 Happy New Year from MetaMe! Wishing you all the best!",
       steps: [
-        "1. Click the button above to download the installer (.dmg file)",
-        "2. Open the .dmg and drag MetaMe into the Applications folder",
-        "3. Open MetaMe — macOS will warn \"cannot verify developer\" → Click \"Cancel\"",
-        "4. Go to System Settings → Privacy & Security → Scroll down to find \"MetaMe was blocked\" → Click \"Open Anyway\"",
+        "1. Download MetaMe-Install.zip",
+        "2. Double-click to unzip",
+        "3. Double-click \"双击本文件安装.command\"",
+        "4. If macOS warns \"cannot verify developer\" → Go to System Settings → Privacy & Security → Scroll down to find \"MetaMe was blocked\" → Click \"Open Anyway\"",
         "⚠️ This is NOT malware! We're in beta and haven't purchased an Apple Developer certificate yet. The official release will be signed. If it still won't open, run in Terminal: xattr -cr /Applications/MetaMe.app",
         "5. Scan the QR code to add the Feishu bot → You'll receive an invite code (first time only) → Enter it on your computer",
         "6. Send \"Bind\" to the bot → Receive a binding code → Enter it on your computer → Binding complete"
@@ -114,7 +114,7 @@ export default function Home() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 items-center">
           <a
-            href="https://github.com/Yaron9/metame-commerce/releases/download/Metame/MetaMe.dmg"
+            href="https://github.com/Yaron9/metame-commerce/releases/download/Metame/MetaMe-Install.zip"
             className="group relative flex items-center gap-3 px-8 py-3.5 border-2 border-black rounded-full hover:bg-black hover:text-white transition-all duration-300"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -161,7 +161,16 @@ export default function Home() {
             </button>
 
             {/* Modal Header */}
-            <h3 className="text-2xl font-bold text-center mb-2">{t.modalTitle}</h3>
+            <div className="flex items-center justify-center gap-4 mb-2">
+              <h3 className="text-2xl font-bold text-center">{t.modalTitle}</h3>
+              <a
+                href="https://github.com/Yaron9/metame-commerce/releases/download/Metame/MetaMe-Install.zip"
+                className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-black text-white text-xs font-semibold rounded-full hover:bg-gray-800 transition-colors shrink-0"
+              >
+                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.45-1.15 4.36-1.15 1.5.15 2.76.71 3.51 1.76-2.99 1.77-2.61 5.91.56 7.28-.48 1.4-1.16 2.82-3.51 4.34zM13.03 5.37c.75-1.07.69-2.31.54-3.37-1.17.07-2.58.74-3.26 1.76-.63 1.01-.52 2.37.56 2.37.15 0 1.25.13 2.16-.76z"/></svg>
+                {t.download}
+              </a>
+            </div>
             <p className="text-center text-base text-red-500 mb-8">{t.modalGreeting}</p>
 
             {/* QR Codes */}
