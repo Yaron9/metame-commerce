@@ -28,13 +28,11 @@ export default function Home() {
       modalTitle: "获取邀请码 & 安装指南",
       modalGreeting: "🧧 新年快乐！MetaMe 给大家拜年啦，祝各位马年大吉、万事如意！",
       steps: [
-        "1. 点击上方按钮下载安装包（.dmg 文件）",
-        "2. 双击打开 .dmg，将 MetaMe 拖入「应用程序」文件夹",
-        "3. 打开 MetaMe，系统会提示「无法验证开发者」→ 点击「取消」",
-        "4. 打开「系统设置」→「隐私与安全性」→ 页面下拉找到「MetaMe 已被阻止」→ 点击「仍要打开」",
-        "⚠️ 这不是病毒！目前处于内测阶段，尚未购买 Apple 开发者证书，正式版会解决。如仍无法打开，请打开「终端」输入：xattr -cr /Applications/MetaMe.app",
-        "5. 扫码添加飞书机器人 → 自动收到邀请码（仅首次）→ 在电脑上输入邀请码",
-        "6. 给机器人发送「绑定」→ 收到绑定码 → 在电脑上输入绑定码 → 绑定成功"
+        "1. 下载 MetaMe-Install.pkg，双击按照提示完成安装",
+        "2. 打开 MetaMe，如系统提示「无法验证开发者」→ 打开「系统设置」→「隐私与安全性」→ 页面下拉找到「MetaMe 已被阻止」→ 点击「仍要打开」",
+        "⚠️ 这不是病毒！目前处于内测阶段，尚未购买 Apple 开发者证书，正式版会解决。",
+        "3. 扫码添加飞书机器人 → 自动收到邀请码（仅首次）→ 在电脑上输入邀请码",
+        "4. 给机器人发送「绑定」→ 收到绑定码 → 在电脑上输入绑定码 → 绑定成功"
       ]
     },
     en: {
@@ -56,13 +54,11 @@ export default function Home() {
       modalTitle: "Get Invite Code & Install Guide",
       modalGreeting: "🧧 Happy New Year from MetaMe! Wishing you all the best!",
       steps: [
-        "1. Click the button above to download the installer (.dmg file)",
-        "2. Open the .dmg and drag MetaMe into the Applications folder",
-        "3. Open MetaMe — macOS will warn \"cannot verify developer\" → Click \"Cancel\"",
-        "4. Go to System Settings → Privacy & Security → Scroll down to find \"MetaMe was blocked\" → Click \"Open Anyway\"",
-        "⚠️ This is NOT malware! We're in beta and haven't purchased an Apple Developer certificate yet. The official release will be signed. If it still won't open, run in Terminal: xattr -cr /Applications/MetaMe.app",
-        "5. Scan the QR code to add the Feishu bot → You'll receive an invite code (first time only) → Enter it on your computer",
-        "6. Send \"Bind\" to the bot → Receive a binding code → Enter it on your computer → Binding complete"
+        "1. Download MetaMe-Install.pkg, double-click and follow the prompts to install",
+        "2. Open MetaMe. If macOS warns \"cannot verify developer\" → Go to System Settings → Privacy & Security → Scroll down to find \"MetaMe was blocked\" → Click \"Open Anyway\"",
+        "⚠️ This is NOT malware! We're in beta and haven't purchased an Apple Developer certificate yet. The official release will be signed.",
+        "3. Scan the QR code to add the Feishu bot → You'll receive an invite code (first time only) → Enter it on your computer",
+        "4. Send \"Bind\" to the bot → Receive a binding code → Enter it on your computer → Binding complete"
       ]
     }
   };
@@ -114,7 +110,7 @@ export default function Home() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 items-center">
           <a
-            href="https://github.com/Yaron9/metame-commerce/releases/download/Metame/MetaMe.dmg"
+            href="https://github.com/Yaron9/metame-commerce/releases/download/Metame/MetaMe-Install.pkg"
             className="group relative flex items-center gap-3 px-8 py-3.5 border-2 border-black rounded-full hover:bg-black hover:text-white transition-all duration-300"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
