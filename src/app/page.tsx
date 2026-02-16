@@ -28,11 +28,12 @@ export default function Home() {
       modalTitle: "获取邀请码 & 安装指南",
       modalGreeting: "🧧 新年快乐！MetaMe 给大家拜年啦，祝各位马年大吉、万事如意！",
       steps: [
-        "1. 下载 MetaMe-Install.pkg，双击按照提示完成安装",
-        "2. 打开 MetaMe，如系统提示「无法验证开发者」→ 打开「系统设置」→「隐私与安全性」→ 页面下拉找到「MetaMe 已被阻止」→ 点击「仍要打开」",
+        "1. 下载 MetaMe-Install.pkg → 双击打开 → 系统提示「无法验证开发者」→ 点击「取消」（不要点删除！）",
+        "2. 打开「系统设置」→「隐私与安全性」→ 页面下拉找到「MetaMe-Install.pkg 已被阻止」→ 点击「仍要打开」",
+        "3. 再次双击 pkg → 点击「打开」→ 输入电脑密码 → 按提示完成安装",
         "⚠️ 这不是病毒！目前处于内测阶段，尚未购买 Apple 开发者证书，正式版会解决。",
-        "3. 扫码添加飞书机器人 → 自动收到邀请码（仅首次）→ 在电脑上输入邀请码",
-        "4. 给机器人发送「绑定」→ 收到绑定码 → 在电脑上输入绑定码 → 绑定成功"
+        "4. 扫码添加飞书机器人 → 自动收到邀请码（仅首次）→ 在电脑上输入邀请码",
+        "5. 给机器人发送「绑定」→ 收到绑定码 → 在电脑上输入绑定码 → 绑定成功"
       ]
     },
     en: {
@@ -54,11 +55,12 @@ export default function Home() {
       modalTitle: "Get Invite Code & Install Guide",
       modalGreeting: "🧧 Happy New Year from MetaMe! Wishing you all the best!",
       steps: [
-        "1. Download MetaMe-Install.pkg, double-click and follow the prompts to install",
-        "2. Open MetaMe. If macOS warns \"cannot verify developer\" → Go to System Settings → Privacy & Security → Scroll down to find \"MetaMe was blocked\" → Click \"Open Anyway\"",
+        "1. Download MetaMe-Install.pkg → Double-click → macOS warns \"cannot verify developer\" → Click \"Cancel\" (do NOT click Delete!)",
+        "2. Open System Settings → Privacy & Security → Scroll down to find \"MetaMe-Install.pkg was blocked\" → Click \"Open Anyway\"",
+        "3. Double-click the pkg again → Click \"Open\" → Enter your Mac password → Follow prompts to complete installation",
         "⚠️ This is NOT malware! We're in beta and haven't purchased an Apple Developer certificate yet. The official release will be signed.",
-        "3. Scan the QR code to add the Feishu bot → You'll receive an invite code (first time only) → Enter it on your computer",
-        "4. Send \"Bind\" to the bot → Receive a binding code → Enter it on your computer → Binding complete"
+        "4. Scan the QR code to add the Feishu bot → You'll receive an invite code (first time only) → Enter it on your computer",
+        "5. Send \"Bind\" to the bot → Receive a binding code → Enter it on your computer → Binding complete"
       ]
     }
   };
