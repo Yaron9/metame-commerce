@@ -13,9 +13,9 @@ export default function Home() {
       about: "关于我",
       contact: "联系我",
       macos: "MacOS 客户端",
-      download: "点击下载",
-      invite: "邀请码",
-      getInvite: "点击获取",
+      download: "点击下载 macOS (ARM)",
+      invite: "新春福利 免费发放",
+      getInvite: "共100名额",
       greeting: "🧧 过年好！新年大吉，万事如意！",
       rotatingText: [
         "24小时随时待命，我是您的全天候数字助手",
@@ -40,9 +40,9 @@ export default function Home() {
       about: "About Me",
       contact: "Contact",
       macos: "MacOS",
-      download: "Click to Download",
-      invite: "Invite Code",
-      getInvite: "Click to Get",
+      download: "Download for macOS (ARM)",
+      invite: "Free for Spring Festival",
+      getInvite: "100 spots only",
       greeting: "🧧 Happy New Year!",
       rotatingText: [
         "24/7 Standby, your all-weather digital assistant",
@@ -113,9 +113,9 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-5 items-center">
           <a
             href="https://github.com/Yaron9/metame-releases/releases/latest/download/MetaMe-Install.pkg"
-            className="group relative flex items-center gap-3 px-8 py-3.5 border-2 border-black rounded-full hover:bg-black hover:text-white transition-all duration-300"
+            className="group relative flex items-center gap-2 px-6 py-2.5 text-sm border-2 border-black rounded-full hover:bg-black hover:text-white transition-all duration-300"
           >
-            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.45-1.15 4.36-1.15 1.5.15 2.76.71 3.51 1.76-2.99 1.77-2.61 5.91.56 7.28-.48 1.4-1.16 2.82-3.51 4.34zM13.03 5.37c.75-1.07.69-2.31.54-3.37-1.17.07-2.58.74-3.26 1.76-.63 1.01-.52 2.37.56 2.37.15 0 1.25.13 2.16-.76z" />
             </svg>
             <span className="text-[15px] font-semibold tracking-wide">{t.macos}</span>
