@@ -112,7 +112,7 @@ export default function Home() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 items-center">
           <a
-            href="https://github.com/Yaron9/metame-releases/releases/download/v1.1.0/MetaMe-Install.pkg"
+            href="https://github.com/Yaron9/metame-releases/releases/latest/download/MetaMe-Install.pkg"
             className="group relative flex items-center gap-3 px-8 py-3.5 border-2 border-black rounded-full hover:bg-black hover:text-white transition-all duration-300"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
